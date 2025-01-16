@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <header id="home">
@@ -31,9 +32,10 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a graduate student at Northeastern University, pursuing an M.S. in Software Engineering Systems. 
-      With hands-on experience in data science, machine learning, and software development, I specialize in creating 
-      impactful solutions using cutting-edge technologies.
+      I am a graduate student at Northeastern University, pursuing an M.S. in Software Engineering Systems. With hands-on experience in data science, machine learning, and software development, I specialize in creating impactful solutions using cutting-edge technologies.
+    </p>
+    <p>
+      I am passionate about leveraging data to solve real-world problems and contribute to technology-driven solutions in the fields of software engineering and data science.
     </p>
   </section>
 
@@ -67,12 +69,14 @@
         <p>
           An automated parking management platform integrating geolocation features, reducing search times by 20%.
         </p>
+        <a href="https://github.com/vap2999/parkbnb" target="_blank">View Project</a>
       </div>
       <div class="project">
         <h3>Temperature Detection System</h3>
         <p>
           A real-time IoT-based temperature monitoring system with automated email alerts, ensuring 99% uptime.
         </p>
+        <a href="https://github.com/vap2999/temperature-detection" target="_blank">View Project</a>
       </div>
     </div>
   </section>
@@ -82,30 +86,30 @@
     <div class="skills-grid">
       <div>
         <h3>Programming</h3>
-        <p>Python, Java, C, Django, React</p>
-      </div>
-      <div>
-        <h3>Databases</h3>
-        <p>MySQL, PostgreSQL</p>
+        <div class="progress-bar" data-skill="Python" style="width: 85%"></div>
+        <div class="progress-bar" data-skill="Java" style="width: 80%"></div>
+        <div class="progress-bar" data-skill="C" style="width: 75%"></div>
+        <div class="progress-bar" data-skill="Django" style="width: 70%"></div>
       </div>
       <div>
         <h3>Machine Learning</h3>
-        <p>TensorFlow, Keras, PyTorch, Scikit-Learn</p>
+        <div class="progress-bar" data-skill="TensorFlow" style="width: 90%"></div>
+        <div class="progress-bar" data-skill="Keras" style="width: 85%"></div>
+        <div class="progress-bar" data-skill="Scikit-Learn" style="width: 80%"></div>
+        <div class="progress-bar" data-skill="PyTorch" style="width: 70%"></div>
       </div>
       <div>
-        <h3>Tools</h3>
-        <p>VSCode, Docker, Postman, GitHub</p>
+        <h3>Data Visualization</h3>
+        <div id="skill-chart" class="chart-container"></div>
       </div>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>
-      Feel free to reach out! I'm always open to collaborating or discussing new opportunities.
-    </p>
+    <p>Feel free to reach out! I'm always open to collaborating or discussing new opportunities.</p>
     <ul>
-      <li><strong>Email:</strong> <a href="mailto:nshi@northeastern.edu">nshi@northeastern.edu</a></li>
+      <li><strong>Email:</strong> <a href="mailto:vanshi@northeastern.edu">vanshi@northeastern.edu</a></li>
       <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/vanshi-patel-2k2">linkedin.com/in/vanshi-patel-2k2</a></li>
       <li><strong>GitHub:</strong> <a href="https://github.com/vap2999">github.com/vap2999</a></li>
     </ul>
