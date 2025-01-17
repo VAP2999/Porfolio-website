@@ -1,0 +1,17 @@
+.about {
+    padding: 20px;
+  }
+  
+  .about h2 {
+    color: #f9a825;
+  }
+  
+  .about-buttons .btn {
+    margin: 10px;
+    padding: 10px 20px;
+    background: #f9a825;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  

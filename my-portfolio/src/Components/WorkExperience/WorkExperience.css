@@ -1,0 +1,25 @@
+.work-experience {
+    padding: 20px;
+  }
+  
+  .work-experience h2 {
+    color: #f9a825;
+  }
+  
+  .experience-item {
+    margin: 20px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .experience-item h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .experience-item ul {
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  

@@ -1,0 +1,47 @@
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('/Users/patelvanshi/Downloads/IMG_1223.jpg') no-repeat center center/cover;
+    text-align: center;
+  }
+  
+  .home span {
+    color: #f9a825;
+  }
+  
+  .btn {
+    background-color: #f9a825;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  .home-section {
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #999999;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .highlight {
+    color: #4caf50; /* Accent color */
+  }
+  
+  .tagline {
+    font-size: 1.2rem;
+    color: #bbbbbb;
+  }
+  

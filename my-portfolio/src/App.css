@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.app.light {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Add padding to sections to avoid overlap with the navbar */
+section {
+  margin-top: 60px; /* Same height as navbar */
+}
+
+h1, h2 {
+  color: #f9a825;
+}
+
+button, .btn {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #f9a825;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #d08716;
+}
+
+.dark button {
+  background-color: #444;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+}
