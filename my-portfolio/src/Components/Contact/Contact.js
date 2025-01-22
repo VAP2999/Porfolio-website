@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <h2>Get In Touch</h2>
       <p>Email: <a href="mailto:patel.vanshi@northeastern.edu">patel.vanshi@northeastern.edu</a></p>
-      <p>Phone: +1 857-308-6059</p>
+      <p>Phone: +1(857)308 6059</p>
       <iframe
         title="map"
         src="https://www.google.com/maps/embed?pb=!1m18..."

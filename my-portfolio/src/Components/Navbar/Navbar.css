@@ -1,73 +1,103 @@
-/* Navbar Styling */
+/* Navbar Styles */
 .navbar {
-    position: sticky;
+    position: fixed; /* Keeps the navbar fixed on the left side */
     top: 0;
+    left: 0;
+    width: 250px; /* Adjust the width of the navbar */
+    height: 100%; /* Full height of the page */
+    background-color: #1e1e1e; /* Dark background for dark theme */
+    color: white;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    background-color: #1a1a1a; /* Default dark background */
-    color: #ffffff; /* Default text color */
-    padding: 0.5rem 2rem;
-    z-index: 1000;
-    height: 60px; /* Adjust height */
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-  
-  .navbar.light {
-    background-color: #ffffff;
-    color: #1a1a1a;
+    justify-content: space-between;
+    padding: 20px 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures it stays above all content */
   }
   
   .navbar-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
-  }
-  
-  .profile-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
   
-  .profile-picture {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
+  /* GIF Styles */
+  .gif-container {
+    margin-bottom: 20px; /* Space between the GIF and the name */
   }
   
-  .site-title {
-    font-size: 1.5rem;
+  .coding-gif {
+    width: 150px; /* Adjust GIF size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: Make it circular */
+  }
+  
+  /* Name Styles */
+  .logo {
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #f9a825; /* Highlight color */
   }
   
-  .navbar-links {
-    display: flex;
+  /* Navigation Links */
+  .nav-links {
     list-style: none;
-    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adds space between links */
   }
   
-  .navbar-links a {
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    color: white;
     text-decoration: none;
-    color: inherit;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
   }
   
-  .navbar-links a:hover {
-    text-decoration: underline;
+  .nav-links a:hover {
+    background-color: #f9a825;
+    color: black;
   }
   
-  .dark-mode-toggle {
-    background-color: transparent;
-    border: 2px solid currentColor;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
+  /* Theme Toggle Button */
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
     cursor: pointer;
+    margin-top: 30px;
   }
   
-  .dark-mode-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+  .theme-toggle:hover {
+    color: #f9a825;
+  }
+  
+  /* Main Content Area */
+  main {
+    margin-left: 250px; /* Offset the content area to accommodate the navbar */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light theme background */
+    min-height: 100vh; /* Ensures the content covers the full height of the page */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .app.dark-theme main {
+    background-color: #121212; /* Dark theme background */
+    color: white;
   }
   
