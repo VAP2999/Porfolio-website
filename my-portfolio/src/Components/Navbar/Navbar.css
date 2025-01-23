@@ -1,103 +1,152 @@
-/* Navbar Styles */
+/* Navbar */
 .navbar {
-    position: fixed; /* Keeps the navbar fixed on the left side */
+    position: fixed;
     top: 0;
     left: 0;
-    width: 250px; /* Adjust the width of the navbar */
-    height: 100%; /* Full height of the page */
-    background-color: #1e1e1e; /* Dark background for dark theme */
+    width: 250px;
+    height: 100%;
+    background-color: #1e1e1e;
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center-align the overall navbar content */
     justify-content: space-between;
-    padding: 20px 10px;
+    padding: 30px 10px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    z-index: 1000; /* Ensures it stays above all content */
-  }
-  
-  .navbar-content {
+    z-index: 1000;
+}
+
+/* Navbar Content */
+.navbar-content {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  /* GIF Styles */
-  .gif-container {
-    margin-bottom: 20px; /* Space between the GIF and the name */
-  }
-  
-  .coding-gif {
-    width: 150px; /* Adjust GIF size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: Make it circular */
-  }
-  
-  /* Name Styles */
-  .logo {
-    font-size: 20px;
-    font-weight: bold;
+    align-items: center; /* Center-align the content inside the navbar */
+}
+
+/* GIF Section */
+.gif-container {
     margin-bottom: 30px;
-    text-align: center;
-    color: #f9a825; /* Highlight color */
-  }
-  
-  /* Navigation Links */
-  .nav-links {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Center-align the GIF */
+    width: 100%; /* Full width */
+}
+
+.coding-gif {
+    width: 170px;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* Name Section (Logo) */
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center; /* Center-align the logo */
+    color: #f9a825;
+    width: 100%; /* Ensure it takes up full width */
+}
+
+/* Navigation Links */
+.nav-links {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Adds space between links */
-  }
-  
-  .nav-links li {
+    gap: 40px; /* Increase spacing between headings */
     width: 100%;
-    text-align: center;
-  }
-  
-  .nav-links a {
+    align-items: flex-start; /* Left-align the links */
+}
+
+.nav-links li {
+    width: 100%;
+    text-align: left; /* Left-align the navigation links */
+}
+
+.nav-links a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px 15px;
+    padding: 12px 20px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
+    width: 100%; /* Ensure the link takes up full width */
+}
+
+.nav-links a:hover {
     background-color: #f9a825;
     color: black;
-  }
-  
-  /* Theme Toggle Button */
-  .theme-toggle {
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center-align the icons */
+    gap: 20px; /* Spacing between icons */
+    margin-top: 40px; /* Space between navigation and icons */
+    margin-bottom: 30px; /* Space between icons and the bottom of the navbar */
+    width: 100%; /* Make sure the icons container takes up full width */
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 28px; /* Increase icon size */
+    color: white;
+    animation: flip 2s ease-in-out infinite; /* Apply flip animation */
+    transform-style: preserve-3d; /* Ensure proper flip */
+    display: inline-block; /* For proper flipping */
+    animation-delay: calc(var(--index) * 2s); /* Stagger animation delay */
+}
+
+/* Optional hover effect for color change */
+.icon:hover {
+    color: #f9a825;
+}
+
+/* Keyframes for flip animation */
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg); /* Flip halfway */
+    }
+    100% {
+        transform: rotateY(360deg); /* Complete flip */
+    }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed; /* Make the toggle fixed on the right */
+    top: 10px;
+    right: 20px;
     background: none;
     border: none;
     color: white;
     font-size: 24px;
     cursor: pointer;
-    margin-top: 30px;
-  }
-  
-  .theme-toggle:hover {
+    z-index: 1001;
+}
+
+.theme-toggle:hover {
     color: #f9a825;
-  }
-  
-  /* Main Content Area */
-  main {
-    margin-left: 250px; /* Offset the content area to accommodate the navbar */
+}
+
+/* Main Content Area */
+main {
+    margin-left: 250px;
     padding: 20px;
-    background-color: #f9f9f9; /* Light theme background */
-    min-height: 100vh; /* Ensures the content covers the full height of the page */
+    background-color: #f9f9f9;
+    min-height: 100vh;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .app.dark-theme main {
-    background-color: #121212; /* Dark theme background */
+}
+
+.app.dark-theme main {
+    background-color: #121212;
     color: white;
-  }
-  
+}

@@ -1,44 +1,3 @@
-// import React, { useState } from "react";
-// import "./Navbar.css";
-
-// const Navbar = () => {
-//   const [isDarkMode, setIsDarkMode] = useState(false);
-
-//   // Toggle dark/light mode
-//   const toggleTheme = () => {
-//     setIsDarkMode(!isDarkMode);
-//     const app = document.querySelector(".app");
-//     if (!isDarkMode) {
-//       app.classList.add("dark");
-//       app.classList.remove("light");
-//     } else {
-//       app.classList.add("light");
-//       app.classList.remove("dark");
-//     }
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <div className="navbar-brand">
-//         <a href="/">Vanshi Patel</a>
-//       </div>
-//       <div className="navbar-links">
-//         <a href="#home">Home</a>
-//         <a href="#about">About</a>
-//         <a href="#education">Education</a>
-//         <a href="#projects">Projects</a>
-//         <a href="#contact">Contact</a>
-//       </div>
-//       <button className="theme-toggle" onClick={toggleTheme}>
-//         {isDarkMode ? "🌙" : "🌞"}
-//       </button>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
 import React from 'react';
 import './Navbar.css';
 
@@ -56,7 +15,7 @@ const Navbar = ({ toggleTheme, darkTheme }) => {
         </div>
 
         {/* Name Section */}
-        <h1 className="logo">hetpatel.dev</h1>
+        <h1 className="logo">vanshipatel.dev</h1>
 
         {/* Navigation Links */}
         <ul className="nav-links">
@@ -67,6 +26,35 @@ const Navbar = ({ toggleTheme, darkTheme }) => {
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
+        {/* Rotating Icons */}
+        <div className="social-icons">
+          <a
+            href="https://www.linkedin.com/in/vanshi-patel-2k2/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+            style={{ '--index': 0 }} // LinkedIn first
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/VAP2999"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon"
+            style={{ '--index': 1 }} // GitHub second
+          >
+            <i className="fab fa-github"></i>
+          </a>
+          <a
+            href="mailto:patel.vanshi@northeastern.edu"
+            className="icon"
+            style={{ '--index': 2 }} // Mail third
+          >
+            <i className="fas fa-envelope"></i>
+          </a>
+        </div>
 
         {/* Theme Toggle */}
         <button className="theme-toggle" onClick={toggleTheme}>

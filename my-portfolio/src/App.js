@@ -7,6 +7,8 @@ import WorkExperience from './Components/WorkExperience/WorkExperience';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 import './App.css';
 
 function App() {
